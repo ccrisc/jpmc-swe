@@ -23,13 +23,14 @@
 
 _Below the instruction to set up this project._
 
-1. Install the necessary dependencies by running  ```sh npm install``` from the project repo
+1. Install the necessary dependencies by running `npm install` from the project repo
+2. Start the python server by running server3.py from the project repo like so:
    ```sh
-   git clone https://github.com/ccrisc/Rhtml-iterator.git
+   python datafeed/server3.py
    ```
    
-2. Run the code in the file `read_data.R`
-3. Run everything in the file `generator.R`
+3. Run the code in the file `read_data.R`
+4. Run everything in the file `generator.R`
 
 This will read the file `Project_template.Rhtml` and create many .html file inside the folder `product_pages`
 
