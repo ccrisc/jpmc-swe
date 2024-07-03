@@ -1,8 +1,3 @@
-# JPMC Task 3
-Starter repo for task 3 of JPMC's Forage program
-https://perspective.finos.org
-
-
 <div align="center">
   <h1 align="center">JPMC Trading Dashboard</h1>
 
