@@ -23,7 +23,7 @@
 
 _Below the instruction to set up this project._
 
-1. Clone the repo
+1. Install the necessary dependencies by running  ```sh npm install``` from the project repo
    ```sh
    git clone https://github.com/ccrisc/Rhtml-iterator.git
    ```
