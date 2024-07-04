@@ -27,7 +27,7 @@ The purpose of the graph is to monitor and determine when a trading opportunity 
 
 The graph tracks the ratio between two stocks over time. Traders want to monitor the ratio of two stocks against a historical correlation with upper and lower bounds. This can help them determine a trading opportunity. Therefore the graph plots also the upper and lower bounds and show when they get crossed.
 
-<img width="915" alt="Screenshot 2024-07-04 alle 08 57 51" src="https://github.com/cjgb/datanalytics/assets/78849337/2743a885-a783-4ecd-8837-c909eb344ec0">
+<img align="center" width="915" alt="Screenshot 2024-07-04 alle 08 57 51" src="https://github.com/cjgb/datanalytics/assets/78849337/2743a885-a783-4ecd-8837-c909eb344ec0">
 
 ### Getting Started/Installation
 
