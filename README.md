@@ -24,7 +24,7 @@ The purpose of the graph is to monitor and determine when a trading opportunity 
 
 ### Project Structure & Preview
 
-The graph tracks the ratio between two stocks over time. Traders want to monitor the ratio of two stocks against a historical correlation with upper and lower bounds. This can help them determine a trading opportunity. Therefore we also want to make this graph plot the upper and lower bounds and show when they get crossed.
+The graph tracks the ratio between two stocks over time. Traders want to monitor the ratio of two stocks against a historical correlation with upper and lower bounds. This can help them determine a trading opportunity. Therefore the graph plots also the upper and lower bounds and show when they get crossed.
 
 
 
