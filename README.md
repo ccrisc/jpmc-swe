@@ -29,10 +29,7 @@ _Below the instruction to set up this project._
    python datafeed/server3.py
    ```
    
-3. Run the code in the file `read_data.R`
-4. Run everything in the file `generator.R`
-
-This will read the file `Project_template.Rhtml` and create many .html file inside the folder `product_pages`
+3. Start the client by running `npm start` from the project repo
 
 
 <!-- CONTRIBUTING -->
