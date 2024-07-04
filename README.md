@@ -1,7 +1,7 @@
 <div align="center">
   <h1 align="center">JPMC Trading Dashboard</h1>
 
-  <p align="center">
+  <p align="left">
     This repo is initially forked from task 3 of JPMC's Forage program. It uses perspective to generate a live graph that displays the data feed in a clear and visually appealing way.
   </p>
 </div>
@@ -20,11 +20,10 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
 </p>
 
-### Project structure
-* `read_data.R`: reads the csv and the json files 
-* `generator.R`: source the file, define how many pages and how many products per page to generate. Lastly running the loop, the template file will be read, and the relevant web pages will be generated.
-* `Project_template.Rhtml`: template that define the webpages style.
-* `product_pages` folder: folder populated with the previously generated webpages 
+### Project purpose
+It uses perspective to generate a live graph that displays the data feed in a clear and visually appealing way for traders to monitor.
+
+The purpose of the graph is to monitor and determine when a trading opportunity may arise as a result of the temporary weakening of a correlation between two stock prices. Given this graph, the trader should be able to quickly and easily notice when the ratio moves too far from the average historical correlation. In the first instance, we'll assume that threshold is +/-10% of the 12-month historical average ratio.
 
 
 ### Getting Started/Installation
@@ -36,7 +35,6 @@ _Below the instruction to set up this project._
    ```sh
    python datafeed/server3.py
    ```
-   
 3. Start the client by running `npm start` from the project repo
 
 
@@ -58,6 +56,5 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- LICENSE -->
 ## License
-
-Distributed under [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0). See `LICENSE.txt` for more information.
+See the https://github.com/theforage/forage-jpmc-swe-task-3 for more information.
 
