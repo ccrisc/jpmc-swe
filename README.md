@@ -41,9 +41,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/Rhtml-iterator`)
-3. Commit your Changes (`git commit -m 'Add some Rhtml-iterator'`)
-4. Push to the Branch (`git push origin feature/Rhtml-iterator`)
+2. Create your Feature Branch (`git checkout -b feature/jpmc-swe`)
+3. Commit your Changes (`git commit -m 'Add some jpmc-swe'`)
+4. Push to the Branch (`git push origin feature/jpmc-swe`)
 5. Open a Pull Request
 
 
