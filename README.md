@@ -6,9 +6,6 @@
   </p>
 </div>
 
-<br>
-
-
 ## Built With
 <p align="left"> 
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
@@ -20,10 +17,15 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
 </p>
 
-### Project purpose
-It uses perspective to generate a live graph that displays the data feed in a clear and visually appealing way for traders to monitor.
+### Project Purpose
+This project is built to display data for traders. It uses perspective to generate a live graph that displays the data feed in a clear and visually appealing way for traders to monitor.
 
 The purpose of the graph is to monitor and determine when a trading opportunity may arise as a result of the temporary weakening of a correlation between two stock prices. Given this graph, the trader should be able to quickly and easily notice when the ratio moves too far from the average historical correlation. In the first instance, we'll assume that threshold is +/-10% of the 12-month historical average ratio.
+
+### Project Structure & Preview
+
+The graph tracks the ratio between two stocks over time. Traders want to monitor the ratio of two stocks against a historical correlation with upper and lower bounds. This can help them determine a trading opportunity. Therefore we also want to make this graph plot the upper and lower bounds and show when they get crossed.
+
 
 
 ### Getting Started/Installation
@@ -36,7 +38,7 @@ _Below the instruction to set up this project._
    python datafeed/server3.py
    ```
 3. Start the client by running `npm start` from the project repo
-
+4. Start by clicking "Streaming Data" button
 
 <!-- CONTRIBUTING -->
 ## Contributing
