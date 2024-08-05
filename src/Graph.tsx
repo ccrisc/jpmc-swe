@@ -12,7 +12,7 @@ interface PerspectiveViewerElement extends HTMLElement {
   load: (table: Table) => void;
 }
 
-type TableData = {
+interface TableData {
   price_abc: number;
   price_def: number;
   ratio: number;
@@ -20,7 +20,7 @@ type TableData = {
   upper_bound: number;
   lower_bound: number;
   trigger_alert: number;
-};
+}
 
 class Graph extends Component<IProps, {}> {
   table: Table | undefined;
@@ -65,9 +65,9 @@ class Graph extends Component<IProps, {}> {
 
   componentDidUpdate() {
     if (this.table) {
-      this.table.update([
-        DataManipulator.generateRow(this.props.data),
-      ] as unknown as TableData[]);
+      // Ensure generateRow returns data conforming to TableData type
+      const data = DataManipulator.generateRow(this.props.data);
+      this.table.update(data);
     }
   }
 }
