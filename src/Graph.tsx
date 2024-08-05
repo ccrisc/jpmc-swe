@@ -5,12 +5,23 @@ import { DataManipulator } from './DataManipulator';
 import './Graph.css';
 
 interface IProps {
-  data: ServerRespond[],
+  data: ServerRespond[];
 }
 
 interface PerspectiveViewerElement extends HTMLElement {
-  load: (table: Table) => void,
+  load: (table: Table) => void;
 }
+
+type TableData = {
+  price_abc: number;
+  price_def: number;
+  ratio: number;
+  timestamp: Date;
+  upper_bound: number;
+  lower_bound: number;
+  trigger_alert: number;
+};
+
 class Graph extends Component<IProps, {}> {
   table: Table | undefined;
 
@@ -19,7 +30,6 @@ class Graph extends Component<IProps, {}> {
   }
 
   componentDidMount() {
-    // Get element from the DOM.
     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
 
     const schema = {
@@ -36,7 +46,6 @@ class Graph extends Component<IProps, {}> {
       this.table = window.perspective.worker().table(schema);
     }
     if (this.table) {
-      // Load the `table` in the `<perspective-viewer>` DOM reference.
       elem.load(this.table);
       elem.setAttribute('view', 'y_line');
       elem.setAttribute('column-pivots', '["stock"]');
@@ -58,7 +67,7 @@ class Graph extends Component<IProps, {}> {
     if (this.table) {
       this.table.update([
         DataManipulator.generateRow(this.props.data),
-      ] as unknown as TableData);
+      ] as unknown as TableData[]);
     }
   }
 }
